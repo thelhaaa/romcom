@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* Apple-standard emoji rendering font stack */
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-shadow-pink {
+    text-shadow: 0 0 15px rgba(255, 42, 133, 0.75), 0 0 30px rgba(255, 42, 133, 0.4);
+  }
+  .text-shadow-white {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 125, 167, 0.5);
+  }
+}
+
+/* Custom romantic scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070206;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff7da7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2a85;
+}
